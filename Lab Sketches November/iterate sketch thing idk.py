@@ -68,22 +68,20 @@ try: # check for exceptions
 
             # iteration amounts and limits
 
-                # flow controlS
-                if self.int <= 0: # tweak iteration amount (default= 0)
-
-                    # class variables
-                    x = self.int
-
-                    # iteration by 1
-                    self.int += 1 # augmented assigmnet operator increase by 1
-                    return x
-
-                    pass
+            # flow controlS
+            if self.int <= 0: # tweak iteration amount (default= 0)
                 
-                else: # if iter exceeds the condition raise an exception!
-                    raise StopIteration
+                # class variables
+                x = self.int
+                # iteration by 1
+                self.int += 1 # augmented assigmnet operator increase by 1
+                return x
                 pass
             
+            else: # if iter exceeds the condition raise an exception!
+                raise StopIteration
+            pass
+        
         
     # object instances/constructors
     waifusclass = WaifuIterator()
