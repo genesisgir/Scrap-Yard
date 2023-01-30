@@ -41,9 +41,9 @@ class Meta(type): # super Meta class
     pass
 
 # inheritance classes/derived classes 💿
-class Moore Kitsunes_Uber_Secret_Sugoi_Dekai_Metaclass(metaclass=Meta):
+class GenesisGirs_Uber_Secret_Sugoi_Dekai_Metaclass(metaclass=Meta):
     pass
 
 # subclasses 📀
-class Sub_Class(Moore Kitsunes_Uber_Secret_Sugoi_Dekai_Metaclass):
+class Sub_Class(GenesisGirs_Uber_Secret_Sugoi_Dekai_Metaclass):
     pass

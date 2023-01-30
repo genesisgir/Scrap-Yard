@@ -7,8 +7,8 @@ import sys
 # define functions
 def x():
     # doc str 
-    """returns Moore Kitsune's name using a return statement"""    
-    return "Moore Kitsune"
+    """returns GenesisGir's name using a return statement"""    
+    return "GenesisGir"
     pass
 
 def xy():

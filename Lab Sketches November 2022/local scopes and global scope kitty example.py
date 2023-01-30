@@ -8,7 +8,7 @@ def kitty(): # overwite global variable CAT
     global WAIFU
     
     CAT = "Super Kitty!"
-    WAIFU = "Moore Kitsune"
+    WAIFU = "GenesisGir"
     
     pass
 

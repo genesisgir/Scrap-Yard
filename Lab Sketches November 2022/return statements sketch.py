@@ -34,7 +34,7 @@ once a return statement is reached.
 def hello(person: str, parameter_amount: int):
     
     # flow controls
-    if person == "Moore Kitsune":
+    if person == "GenesisGir":
         
         return print(f"Hello {person} you have created {parameter_amount} function!")
         pass
@@ -52,7 +52,7 @@ def hello(person: str, parameter_amount: int):
 def goodbye(username: str, parameter_int: int):
     
     # flow controls
-    if username == "Moore Kitsune":
+    if username == "GenesisGir":
         
         return print(f"Hello {username} you have created {parameter_int} function!")
         pass
@@ -69,5 +69,5 @@ def goodbye(username: str, parameter_int: int):
     
     
 
-hello("Moore Kitsune", str(1))
+hello("GenesisGir", str(1))
 goodbye("GenesisGir", str(1))

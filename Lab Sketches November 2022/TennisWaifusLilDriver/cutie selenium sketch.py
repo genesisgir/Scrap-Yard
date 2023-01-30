@@ -85,7 +85,7 @@ ____¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 """
 
-def logger(): # Moore Kitsune's typical logger preset! 🪵
+def logger(): # GenesisGir's typical logger preset! 🪵
     
     # importing modules
     import logging, logging.handlers
@@ -138,7 +138,7 @@ def driver(): # open web page with cute waifu Nanako miku 💗
     from selenium import webdriver
 
     # create driver and assign path
-    lil_driver = webdriver.Chrome(executable_path= r"scrap-yard\Lab Sketches November\Moore KitsunesLilDriver\chromedriver.exe")
+    lil_driver = webdriver.Chrome(executable_path= r"scrap-yard\Lab Sketches November\GenesisGirsLilDriver\chromedriver.exe")
 
     # launch driver
     lil_driver.get("https://pbs.twimg.com/media/EvzZXCCVkAIAZ_t.jpg:large")
@@ -164,7 +164,7 @@ def prompt():
 
     # prompt .wav 
     # .wav w/winsound module
-    winsound.PlaySound(r"scrap-yard\Lab Sketches November\Moore KitsunesLilDriver\audio resources\MENUSFX\ffmenu.wav", winsound.SND_ASYNC)
+    winsound.PlaySound(r"scrap-yard\Lab Sketches November\GenesisGirsLilDriver\audio resources\MENUSFX\ffmenu.wav", winsound.SND_ASYNC)
     pass
 
 # display welcome to user!

@@ -1,5 +1,5 @@
 # zip() functionality
-for item in zip(["Moore Kitsune", "GenesisGir"], ["Software Dev", "Artist"]):
+for item in zip(["GenesisGir", "GenesisGir"], ["Software Dev", "Artist"]):
     
     print(item)
     pass

@@ -14,7 +14,7 @@ def ELOC(x: int): # create multiple eloc's with this cloner
 def login(): # displays log-in!
     
     # user credential constants
-    USER_NAME = "Moore Kitsune"
+    USER_NAME = "GenesisGir"
     PASSWORD = "waifu123"
     
     print("Welcome to the Waifu network database! \n")
