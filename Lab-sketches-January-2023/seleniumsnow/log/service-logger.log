@@ -1,0 +1,497 @@
+[1675122649.104][INFO]: Starting ChromeDriver 108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016}) on port 52390
+[1675122649.104][INFO]: Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[1675122649.604][INFO]: [5008214045ba87dd2e160a78b7f04180] COMMAND InitSession {
+   "capabilities": {
+      "alwaysMatch": {
+         "browserName": "chrome",
+         "goog:chromeOptions": {
+            "args": [  ],
+            "excludeSwitches": [ "enable-logging" ],
+            "extensions": [  ]
+         },
+         "platformName": "any"
+      },
+      "firstMatch": [ {
+      } ]
+   },
+   "desiredCapabilities": {
+      "browserName": "chrome",
+      "goog:chromeOptions": {
+         "args": [  ],
+         "excludeSwitches": [ "enable-logging" ],
+         "extensions": [  ]
+      },
+      "platform": "ANY",
+      "version": ""
+   }
+}
+[1675122649.608][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[1675122649.608][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[1675122649.610][INFO]: Launching chrome: "C:\Program Files\Google\Chrome\Application\chrome.exe" --allow-pre-commit-input --disable-background-networking --disable-backgrounding-occluded-windows --disable-client-side-phishing-detection --disable-default-apps --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-automation --enable-blink-features=ShadowDOMV0 --log-level=0 --no-first-run --no-service-autorun --password-store=basic --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir="C:\Users\daint\AppData\Local\Temp\scoped_dir12416_444371195" data:,
+[1675122650.052][WARNING]: This version of ChromeDriver has not been tested with Chrome version 109.
+[1675122650.057][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1675122650.060][INFO]: [5008214045ba87dd2e160a78b7f04180] RESPONSE InitSession {
+   "capabilities": {
+      "acceptInsecureCerts": false,
+      "browserName": "chrome",
+      "browserVersion": "109.0.5414.120",
+      "chrome": {
+         "chromedriverVersion": "108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016})",
+         "userDataDir": "C:\\Users\\daint\\AppData\\Local\\Temp\\scoped_dir12416_444371195"
+      },
+      "goog:chromeOptions": {
+         "debuggerAddress": "localhost:52399"
+      },
+      "networkConnectionEnabled": false,
+      "pageLoadStrategy": "normal",
+      "platformName": "windows",
+      "proxy": {
+      },
+      "setWindowRect": true,
+      "strictFileInteractability": false,
+      "timeouts": {
+         "implicit": 0,
+         "pageLoad": 300000,
+         "script": 30000
+      },
+      "unhandledPromptBehavior": "dismiss and notify",
+      "webauthn:extension:credBlob": true,
+      "webauthn:extension:largeBlob": true,
+      "webauthn:virtualAuthenticators": true
+   },
+   "sessionId": "5008214045ba87dd2e160a78b7f04180"
+}
+[1675122650.062][INFO]: [5008214045ba87dd2e160a78b7f04180] COMMAND Navigate {
+   "url": "https://github.com/"
+}
+[1675122650.062][INFO]: Waiting for pending navigations...
+[1675122650.063][INFO]: Done waiting for pending navigations. Status: ok
+[1675122650.221][INFO]: Waiting for pending navigations...
+[1675122651.064][INFO]: Done waiting for pending navigations. Status: ok
+[1675122651.064][INFO]: [5008214045ba87dd2e160a78b7f04180] RESPONSE Navigate
+[1675122651.065][INFO]: [5008214045ba87dd2e160a78b7f04180] COMMAND MaximizeWindow {
+}
+[1675122651.065][INFO]: Waiting for pending navigations...
+[1675122651.072][INFO]: Done waiting for pending navigations. Status: ok
+[1675122651.229][INFO]: Waiting for pending navigations...
+[1675122651.680][INFO]: Done waiting for pending navigations. Status: ok
+[1675122651.680][INFO]: [5008214045ba87dd2e160a78b7f04180] RESPONSE MaximizeWindow {
+   "height": 1056,
+   "width": 1936,
+   "x": -8,
+   "y": -8
+}
+[1675122651.680][INFO]: [5008214045ba87dd2e160a78b7f04180] COMMAND FindElement {
+   "using": "xpath",
+   "value": "/html/body/div[1]/div[1]/header/div/div[2]/div/div/div[2]/a"
+}
+[1675122651.680][INFO]: Waiting for pending navigations...
+[1675122651.701][INFO]: Done waiting for pending navigations. Status: ok
+[1675122651.745][INFO]: Waiting for pending navigations...
+[1675122651.746][INFO]: Done waiting for pending navigations. Status: ok
+[1675122651.746][INFO]: [5008214045ba87dd2e160a78b7f04180] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "e1ddb734-8742-42fd-a8c2-2ea79ca79648"
+}
+[1675122651.747][INFO]: [5008214045ba87dd2e160a78b7f04180] COMMAND SetTimeouts {
+   "implicit": 3000
+}
+[1675122651.747][INFO]: [5008214045ba87dd2e160a78b7f04180] RESPONSE SetTimeouts
+[1675122651.748][INFO]: [5008214045ba87dd2e160a78b7f04180] COMMAND PerformActions {
+   "actions": [ {
+      "actions": [ {
+         "duration": 250,
+         "origin": {
+            "element-6066-11e4-a52e-4f735466cecf": "e1ddb734-8742-42fd-a8c2-2ea79ca79648"
+         },
+         "type": "pointerMove",
+         "x": 0,
+         "y": 0
+      }, {
+         "button": 0,
+         "duration": 0,
+         "type": "pointerDown"
+      }, {
+         "button": 0,
+         "duration": 0,
+         "type": "pointerUp"
+      } ],
+      "id": "mouse",
+      "parameters": {
+         "pointerType": "mouse"
+      },
+      "type": "pointer"
+   }, {
+      "actions": [ {
+         "duration": 0,
+         "type": "pause"
+      }, {
+         "duration": 0,
+         "type": "pause"
+      }, {
+         "duration": 0,
+         "type": "pause"
+      } ],
+      "id": "key",
+      "type": "key"
+   } ]
+}
+[1675122651.748][INFO]: Waiting for pending navigations...
+[1675122651.749][INFO]: Done waiting for pending navigations. Status: ok
+[1675122652.052][INFO]: Waiting for pending navigations...
+[1675122652.059][INFO]: Done waiting for pending navigations. Status: ok
+[1675122652.059][INFO]: [5008214045ba87dd2e160a78b7f04180] RESPONSE PerformActions
+[1675122652.060][INFO]: [5008214045ba87dd2e160a78b7f04180] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//*[@id=\"login_field\"]"
+}
+[1675122652.060][INFO]: Waiting for pending navigations...
+[1675122652.066][INFO]: Done waiting for pending navigations. Status: ok
+[1675122652.303][INFO]: Waiting for pending navigations...
+[1675122652.312][INFO]: Done waiting for pending navigations. Status: ok
+[1675122652.312][INFO]: [5008214045ba87dd2e160a78b7f04180] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "07ed1a50-09fc-434a-99be-272c1e408f6f"
+}
+[1675122652.314][INFO]: [5008214045ba87dd2e160a78b7f04180] COMMAND ClearElement {
+   "id": "07ed1a50-09fc-434a-99be-272c1e408f6f"
+}
+[1675122652.314][INFO]: Waiting for pending navigations...
+[1675122652.314][INFO]: Done waiting for pending navigations. Status: ok
+[1675122652.327][INFO]: 
+	=== NOTE: ===
+	The Clear command in ChromeDriver 2.43 and above
+	has been updated to conform to the current standard,
+	including raising blur event after clearing.
+
+[1675122652.334][INFO]: Waiting for pending navigations...
+[1675122652.334][INFO]: Done waiting for pending navigations. Status: ok
+[1675122652.334][INFO]: [5008214045ba87dd2e160a78b7f04180] RESPONSE ClearElement
+[1675122652.335][INFO]: [5008214045ba87dd2e160a78b7f04180] COMMAND TypeElement {
+   "id": "07ed1a50-09fc-434a-99be-272c1e408f6f",
+   "text": "daintygenesis@gmail.com",
+   "value": [ "d", "a", "i", "n", "t", "y", "g", "e", "n", "e", "s", "i", "s", "@", "g", "m", "a", "i", "l", ".", "c", "o", "m" ]
+}
+[1675122652.335][INFO]: Waiting for pending navigations...
+[1675122652.335][INFO]: Done waiting for pending navigations. Status: ok
+[1675122652.358][INFO]: Waiting for pending navigations...
+[1675122652.360][INFO]: Done waiting for pending navigations. Status: ok
+[1675122652.360][INFO]: [5008214045ba87dd2e160a78b7f04180] RESPONSE TypeElement
+[1675122652.361][INFO]: [5008214045ba87dd2e160a78b7f04180] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//*[@id=\"password\"]"
+}
+[1675122652.361][INFO]: Waiting for pending navigations...
+[1675122652.361][INFO]: Done waiting for pending navigations. Status: ok
+[1675122652.367][INFO]: Waiting for pending navigations...
+[1675122652.367][INFO]: Done waiting for pending navigations. Status: ok
+[1675122652.367][INFO]: [5008214045ba87dd2e160a78b7f04180] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "5a33001d-8640-4636-9151-9e11ece769a2"
+}
+[1675122652.368][INFO]: [5008214045ba87dd2e160a78b7f04180] COMMAND ClearElement {
+   "id": "5a33001d-8640-4636-9151-9e11ece769a2"
+}
+[1675122652.368][INFO]: Waiting for pending navigations...
+[1675122652.368][INFO]: Done waiting for pending navigations. Status: ok
+[1675122652.386][INFO]: Waiting for pending navigations...
+[1675122652.386][INFO]: Done waiting for pending navigations. Status: ok
+[1675122652.386][INFO]: [5008214045ba87dd2e160a78b7f04180] RESPONSE ClearElement
+[1675122652.387][INFO]: [5008214045ba87dd2e160a78b7f04180] COMMAND TypeElement {
+   "id": "5a33001d-8640-4636-9151-9e11ece769a2",
+   "text": "DanielaLuffs1@",
+   "value": [ "D", "a", "n", "i", "e", "l", "a", "L", "u", "f", "f", "s", "1", "@" ]
+}
+[1675122652.387][INFO]: Waiting for pending navigations...
+[1675122652.387][INFO]: Done waiting for pending navigations. Status: ok
+[1675122652.418][INFO]: Waiting for pending navigations...
+[1675122652.419][INFO]: Done waiting for pending navigations. Status: ok
+[1675122652.419][INFO]: [5008214045ba87dd2e160a78b7f04180] RESPONSE TypeElement
+[1675122652.420][INFO]: [5008214045ba87dd2e160a78b7f04180] COMMAND TypeElement {
+   "id": "5a33001d-8640-4636-9151-9e11ece769a2",
+   "text": "",
+   "value": [ "" ]
+}
+[1675122652.420][INFO]: Waiting for pending navigations...
+[1675122652.420][INFO]: Done waiting for pending navigations. Status: ok
+[1675122652.435][INFO]: Waiting for pending navigations...
+[1675122653.446][INFO]: Done waiting for pending navigations. Status: ok
+[1675122653.446][INFO]: [5008214045ba87dd2e160a78b7f04180] RESPONSE TypeElement
+[1675122653.447][INFO]: [5008214045ba87dd2e160a78b7f04180] COMMAND FindElement {
+   "using": "xpath",
+   "value": "/html/body/div[1]/div[1]/header/div[7]/details/summary/img"
+}
+[1675122653.447][INFO]: Waiting for pending navigations...
+[1675122653.468][INFO]: Done waiting for pending navigations. Status: ok
+[1675122653.475][INFO]: Waiting for pending navigations...
+[1675122653.477][INFO]: Done waiting for pending navigations. Status: ok
+[1675122653.477][INFO]: [5008214045ba87dd2e160a78b7f04180] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "e4819f69-b43c-46c3-8bf0-f71d5352051f"
+}
+[1675122653.478][INFO]: [5008214045ba87dd2e160a78b7f04180] COMMAND PerformActions {
+   "actions": [ {
+      "actions": [ {
+         "duration": 250,
+         "origin": {
+            "element-6066-11e4-a52e-4f735466cecf": "e4819f69-b43c-46c3-8bf0-f71d5352051f"
+         },
+         "type": "pointerMove",
+         "x": 0,
+         "y": 0
+      }, {
+         "button": 0,
+         "duration": 0,
+         "type": "pointerDown"
+      }, {
+         "button": 0,
+         "duration": 0,
+         "type": "pointerUp"
+      } ],
+      "id": "mouse",
+      "parameters": {
+         "pointerType": "mouse"
+      },
+      "type": "pointer"
+   }, {
+      "actions": [ {
+         "duration": 0,
+         "type": "pause"
+      }, {
+         "duration": 0,
+         "type": "pause"
+      }, {
+         "duration": 0,
+         "type": "pause"
+      } ],
+      "id": "key",
+      "type": "key"
+   } ]
+}
+[1675122653.479][INFO]: Waiting for pending navigations...
+[1675122653.483][INFO]: Done waiting for pending navigations. Status: ok
+[1675122653.787][INFO]: Waiting for pending navigations...
+[1675122653.788][INFO]: Done waiting for pending navigations. Status: ok
+[1675122653.788][INFO]: [5008214045ba87dd2e160a78b7f04180] RESPONSE PerformActions
+[1675122653.789][INFO]: [5008214045ba87dd2e160a78b7f04180] COMMAND FindElement {
+   "using": "xpath",
+   "value": "/html/body/div[1]/div[1]/header/div[7]/details/details-menu/a[1]"
+}
+[1675122653.789][INFO]: Waiting for pending navigations...
+[1675122653.802][INFO]: Done waiting for pending navigations. Status: ok
+[1675122653.948][INFO]: Waiting for pending navigations...
+[1675122653.949][INFO]: Done waiting for pending navigations. Status: ok
+[1675122653.949][INFO]: [5008214045ba87dd2e160a78b7f04180] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "04c740be-4400-4ee9-8c33-363b6df01fc9"
+}
+[1675122653.950][INFO]: [5008214045ba87dd2e160a78b7f04180] COMMAND PerformActions {
+   "actions": [ {
+      "actions": [ {
+         "duration": 250,
+         "origin": {
+            "element-6066-11e4-a52e-4f735466cecf": "04c740be-4400-4ee9-8c33-363b6df01fc9"
+         },
+         "type": "pointerMove",
+         "x": 0,
+         "y": 0
+      }, {
+         "button": 0,
+         "duration": 0,
+         "type": "pointerDown"
+      }, {
+         "button": 0,
+         "duration": 0,
+         "type": "pointerUp"
+      } ],
+      "id": "mouse",
+      "parameters": {
+         "pointerType": "mouse"
+      },
+      "type": "pointer"
+   }, {
+      "actions": [ {
+         "duration": 0,
+         "type": "pause"
+      }, {
+         "duration": 0,
+         "type": "pause"
+      }, {
+         "duration": 0,
+         "type": "pause"
+      } ],
+      "id": "key",
+      "type": "key"
+   } ]
+}
+[1675122653.950][INFO]: Waiting for pending navigations...
+[1675122653.950][INFO]: Done waiting for pending navigations. Status: ok
+[1675122654.222][INFO]: Waiting for pending navigations...
+[1675122654.227][INFO]: Done waiting for pending navigations. Status: ok
+[1675122654.227][INFO]: [5008214045ba87dd2e160a78b7f04180] RESPONSE PerformActions
+[1675122680.161][INFO]: [5008214045ba87dd2e160a78b7f04180] COMMAND FindElement {
+   "using": "xpath",
+   "value": "/html/body/div[1]/div[1]/header/div[7]/details/summary/img"
+}
+[1675122680.161][INFO]: Waiting for pending navigations...
+[1675122680.162][INFO]: Done waiting for pending navigations. Status: ok
+[1675122680.171][INFO]: Waiting for pending navigations...
+[1675122680.172][INFO]: Done waiting for pending navigations. Status: ok
+[1675122680.172][INFO]: [5008214045ba87dd2e160a78b7f04180] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "e5d0d037-e795-4a37-bb7f-8ab6a17baf6a"
+}
+[1675122680.173][INFO]: [5008214045ba87dd2e160a78b7f04180] COMMAND PerformActions {
+   "actions": [ {
+      "actions": [ {
+         "duration": 250,
+         "origin": {
+            "element-6066-11e4-a52e-4f735466cecf": "e5d0d037-e795-4a37-bb7f-8ab6a17baf6a"
+         },
+         "type": "pointerMove",
+         "x": 0,
+         "y": 0
+      }, {
+         "button": 0,
+         "duration": 0,
+         "type": "pointerDown"
+      }, {
+         "button": 0,
+         "duration": 0,
+         "type": "pointerUp"
+      } ],
+      "id": "mouse",
+      "parameters": {
+         "pointerType": "mouse"
+      },
+      "type": "pointer"
+   }, {
+      "actions": [ {
+         "duration": 0,
+         "type": "pause"
+      }, {
+         "duration": 0,
+         "type": "pause"
+      }, {
+         "duration": 0,
+         "type": "pause"
+      } ],
+      "id": "key",
+      "type": "key"
+   } ]
+}
+[1675122680.173][INFO]: Waiting for pending navigations...
+[1675122680.173][INFO]: Done waiting for pending navigations. Status: ok
+[1675122685.465][INFO]: Waiting for pending navigations...
+[1675122685.466][INFO]: Done waiting for pending navigations. Status: ok
+[1675122685.466][INFO]: [5008214045ba87dd2e160a78b7f04180] RESPONSE PerformActions
+[1675122685.467][INFO]: [5008214045ba87dd2e160a78b7f04180] COMMAND FindElement {
+   "using": "xpath",
+   "value": "/html/body/div[1]/div[1]/header/div[7]/details/details-menu/form/button"
+}
+[1675122685.467][INFO]: Waiting for pending navigations...
+[1675122685.467][INFO]: Done waiting for pending navigations. Status: ok
+[1675122687.224][INFO]: Waiting for pending navigations...
+[1675122687.225][INFO]: Done waiting for pending navigations. Status: ok
+[1675122687.225][INFO]: [5008214045ba87dd2e160a78b7f04180] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "dfd81973-962a-4716-842d-8ebc18873785"
+}
+[1675122687.226][INFO]: [5008214045ba87dd2e160a78b7f04180] COMMAND PerformActions {
+   "actions": [ {
+      "actions": [ {
+         "duration": 250,
+         "origin": {
+            "element-6066-11e4-a52e-4f735466cecf": "dfd81973-962a-4716-842d-8ebc18873785"
+         },
+         "type": "pointerMove",
+         "x": 0,
+         "y": 0
+      }, {
+         "button": 0,
+         "duration": 0,
+         "type": "pointerDown"
+      }, {
+         "button": 0,
+         "duration": 0,
+         "type": "pointerUp"
+      } ],
+      "id": "mouse",
+      "parameters": {
+         "pointerType": "mouse"
+      },
+      "type": "pointer"
+   }, {
+      "actions": [ {
+         "duration": 0,
+         "type": "pause"
+      }, {
+         "duration": 0,
+         "type": "pause"
+      }, {
+         "duration": 0,
+         "type": "pause"
+      } ],
+      "id": "key",
+      "type": "key"
+   } ]
+}
+[1675122687.226][INFO]: Waiting for pending navigations...
+[1675122687.227][INFO]: Done waiting for pending navigations. Status: ok
+[1675122687.492][INFO]: Waiting for pending navigations...
+[1675122688.189][INFO]: Done waiting for pending navigations. Status: ok
+[1675122688.189][INFO]: [5008214045ba87dd2e160a78b7f04180] RESPONSE PerformActions
