@@ -1,0 +1,1 @@
+[print("Hello GenesisGir") if var == 1 else print("Hello jibjib") if var==2 else (print("Hellow Ms. Genesis") if var == 3 else print()) for var in [1,2,3]]
