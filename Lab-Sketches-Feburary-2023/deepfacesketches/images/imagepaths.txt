@@ -1,0 +1,4 @@
+r'Scrap-Yard\Lab-Sketches-Feburary-2023\deepfacesketches\images\charliecsheen.jpg'
+r'Scrap-Yard\Lab-Sketches-Feburary-2023\deepfacesketches\images\robbie.jpg'
+r'Scrap-Yard\Lab-Sketches-Feburary-2023\deepfacesketches\images\sammie.jpg'
+r'Scrap-Yard\Lab-Sketches-Feburary-2023\deepfacesketches\images\walterwhite.jpg'
