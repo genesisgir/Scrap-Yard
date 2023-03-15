@@ -1,6 +1,5 @@
 """
-
-
+🅶🅴🅽🅴🆂🅸🆂  🅶🅴🅽🅴🆂🅸🆂  🅶🅴🅽🅴🆂🅸🆂  🅶🅴🅽🅴🆂🅸🆂  🅶🅴🅽🅴🆂🅸🆂  🅶🅴🅽🅴🆂🅸🆂  🅶🅴🅽🅴🆂🅸🆂  🅶🅴🅽🅴🆂🅸🆂  🅶🅴🅽🅴🆂🅸🆂  🅶🅴🅽🅴🆂🅸🆂 
 
                 ██████╗░██╗░░░██╗██╗███╗░░██╗██████╗░██╗░░░██╗████████╗██████╗░██╗░░░░░██╗░░░██╗░██████╗
                 ██╔══██╗╚██╗░██╔╝██║████╗░██║██╔══██╗██║░░░██║╚══██╔══╝██╔══██╗██║░░░░░██║░░░██║██╔════╝
@@ -151,6 +150,7 @@ def ip_input():
     
     # store IP logic
     while True:
+      
       # user ip input
       resp = pyinputplus.inputIP(prompt='Enter a IPv4 or IPv6 address to store into the text file. \n')
       print() # blank line
@@ -159,11 +159,14 @@ def ip_input():
       IP = resp
 
       # write IP addresses to file
-      with open(file=r'Scrap-Yard\Labs-March-2023\PyinputplusScarps\Fake-IP-Addresses.txt', mode='a', encoding='utf-8', newline='\n') as f:
-
+      with open(
+        file=r'Scrap-Yard\Labs-March-2023\PyinputplusScarps\Fake-IP-Addresses.txt', 
+        mode='a', 
+        encoding='utf-8', 
+        newline='\n') as f:
+        
         # store IP address to IP address file
         f.write(IP + '\n')
-        f.close()
 
       # IP successfully stored message!
       print('IP stored into text file! \n')
@@ -210,6 +213,8 @@ def ip_input():
     
     else:
       pass # do nothing just pass through
+
+# TODO add more types of inputs but I got the gist
 
 # function calls (uncomment one of them to test)
 #password_prompt()
