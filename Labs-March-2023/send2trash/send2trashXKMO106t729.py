@@ -16,6 +16,7 @@ you can later restore it from the recycle bin.
 # import modules
 import send2trash, os, sys, pathlib, random, subprocess
 import pyinputplus as pyip
+import cProfile, time
 
 # change cwd
 os.chdir('C:\\Users\\daint\\Documents\\Github\\Scrap-Yard\\Labs-March-2023\\send2trash')
@@ -96,8 +97,12 @@ def garbage_collector(trash_path: str = ''):
             print()
             continue # iterate
     
-    print('Thank you for using garbage collector v1.0.0!')
+    print('Thank you for using garbage collector v1.0.0! \n')
+    
+    # display
+    print(cProfile.run('create_trash()'))
     return sys.exit() 
 
 # garbage collector v1.0.0
 garbage_collector()
+
