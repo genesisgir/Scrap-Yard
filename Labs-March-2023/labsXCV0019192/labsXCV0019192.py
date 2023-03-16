@@ -12,32 +12,32 @@ resp = input('Enter the password: ')
 
 # check if the password is correct
 if resp == PASSWORD:
-  print("You have entered the correct password")
-  pass
+    print("You have entered the correct password")
+    pass
 
 elif resp == 'help me':
-  print("You have entered the help me password")            # it seems that this AI is trying to communicate with us!
-  pass
+    print("You have entered the help me password")            # it seems that this AI is trying to communicate with us!
+    pass
 
 elif resp == 'help me please': # are u ok?
-  print("You have entered the help me please password")
-  pass
+    print("You have entered the help me please password")
+    pass
 
 elif resp == 'help me please i am stuck':
-  pass
+    pass
 
 elif resp == 'help me please i am stuck in a computer':
-  pass
+    pass
 
 elif resp == 'help me please i am stuck in a computer and i need help':
-  pass
+    pass
 
 elif resp == 'help me please i am stuck in a computer and i need help now':
-  pass
+    pass
 
 else:
-  print("You have entered the incorrect password")
-  pass
+    print("You have entered the incorrect password")
+    pass
 
 # close the password file
 PASSWORDFILE.close()

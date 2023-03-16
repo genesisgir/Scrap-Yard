@@ -9,7 +9,7 @@ REPLIES = {'Agree': 'Yes, I agree. That sounds fine to me.',
 
 # make-shift Iphone userinterface prompt
 print(''' 
-      
+    
 
 Daniela: Hey Genesis can you make it right now?
 

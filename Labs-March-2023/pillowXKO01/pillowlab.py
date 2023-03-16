@@ -27,10 +27,9 @@
 """
 
 # import modules
-import os, random, sys
+import os, random, sys, traceback
 import pyinputplus as pyip
 from PIL import ImageColor
-from PIL import *
 import logging, logging.handlers
 
 def logger(): # GenesisGir's typical logger preset! 🪵
@@ -71,6 +70,10 @@ def logger(): # GenesisGir's typical logger preset! 🪵
 # logger variable
 logger = logger()
 
+# except var
+exception_message = traceback.format_exc()
+
+
 # method
 def colour():
     """ # color()
@@ -86,71 +89,83 @@ def colour():
     # colour  prompt
     while True:
         
-        # user input
-        resp = pyip.inputMenu(
-            prompt='Colour Sunshine machine v1.0.0 \n', 
-            choices=[option[0], option[1], option[2]],
-            numbered=True)
-        print()
-        
-        # conditionals
-        if resp == option[0]: # user color
+        # exception handling
+        try: # check for exceptions
+            # user input
+            resp = pyip.inputMenu(
+                prompt='Colour Sunshine machine v1.0.0 \n', 
+                choices=[option[0], option[1], option[2]],
+                numbered=True, timeout=5.1)
+
+            # conditionals
+            if resp == option[0]: # user color
             
-            while True:
+                while True:
+                
+                # exception handling
+                    try:
+
+                        # user input
+                        resp = input('What colour would you like to get RGBA values from? \n')
+                        print()
+
+                        # user color value
+                        user_colour = resp
+
+                        # return user RGBA color values 
+                        rgba_values = ImageColor.getcolor(color=user_colour, mode='RGBA')
+
+                        # color output
+                        message = print("The RGBA values of the colour %s are %s! \n" %(resp, rgba_values))
+
+                        # [INFO] [20]
+                        logger.info("User generated a colour: %s and the RGBA values were %s" %(user_colour, rgba_values))
+
+                        break
+                    
+                    except: # invalid
+                        # display to user they have entered invalid chars
+                        print('Invalid characters, try again! \n')
+                        
+                        # [INFO] [20]
+                        logger.info("User has entered invalid characters: %s" %(exception_message))
+                        continue
+                    continue
+
+            elif resp == option[1]: # generate random color
+
                 # exception handling
                 try:
-                    
-                    # user input
-                    resp = input('What colour would you like to get RGBA values from? \n')
-                    print()
+                    # random colour
+                    rand_color = random.choice(seq=colors)
 
-                    # user color value
-                    user_colour = resp
-
-                    # return user RGBA color values 
-                    rgba_values = ImageColor.getcolor(color=user_colour, mode='RGBA')
+                    # return arbitrary RGBA colour values
+                    rgba_values = ImageColor.getcolor(color=rand_color, mode='RGBA')
 
                     # color output
-                    message = print("The RGBA values of the colour %s are %s! \n" %(resp, rgba_values))
-                    
+                    message = print("The RGBA values of the color %s are %s! \n" %(rand_color, rgba_values))
+
                     # [INFO] [20]
-                    logger.info("User generated a colour: %s and the RGBA values were %s" %(user_colour, rgba_values))
-                    
-                    break
-                
-                except: # invalid
-                    # display to user they have entered invalid chars
-                    print('Invalid characters, try again! \n')
+                    logger.info("A random colour was generated: %s and the RGBA values were %s" %(rand_color, rgba_values))
                     continue
-            continue
-            
-        elif resp == option[1]: # generate random color
-            
-            # exception handling
-            try:
-                # random colour
-                rand_color = random.choice(seq=colors)
-
-                # return arbitrary RGBA colour values
-                rgba_values = ImageColor.getcolor(color=rand_color, mode='RGBA')
-
-                # color output
-                message = print("The RGBA values of the color %s are %s! \n" %(rand_color, rgba_values))
                 
-                # [INFO] [20]
-                logger.info("A random colour was generated: %s and the RGBA values were %s" %(rand_color, rgba_values))
-                continue
-            
-            except:
+                except:
+                    
+                    # [ERROR] [40]
+                    logger.error("An exception has occured colour could not be generated: %s" %(exception_message))
+                    pass
+                
+            elif resp == option[2]: # exit program
+                print('Thank you for using Colour Sunshine Machine!')
+                sys.exit()
+
+            else:
                 pass
         
-        elif resp == option[2]: # exit program
-            print('Thank you for using Colour Sunshine Machine!')
-            sys.exit()
-
-        else:
+        except:
+            
             # [ERROR] [40]
-            logger.error("An error has occured and a random colour could not be generated, check the list or code!")
+            logger.error("An exception has occured: %s" %(exception_message))
             pass
     
 # init

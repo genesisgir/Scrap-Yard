@@ -1,10 +1,4 @@
-03/14/2023 04:34:50 PM [__main__] [INFO] [Lvl:20] [colour] [117] User generated a colour: red and the RGBA values were (255, 0, 0, 255)
-03/14/2023 04:35:34 PM [__main__] [INFO] [Lvl:20] [colour] [117] User generated a colour: blue and the RGBA values were (0, 0, 255, 255)
-03/14/2023 04:36:08 PM [__main__] [INFO] [Lvl:20] [colour] [117] User generated a colour: green and the RGBA values were (0, 128, 0, 255)
-03/14/2023 04:36:17 PM [__main__] [INFO] [Lvl:20] [colour] [141] A random colour was generated: BLACK and the RGBA values were (0, 0, 0, 255)
-03/14/2023 04:36:36 PM [__main__] [INFO] [Lvl:20] [colour] [141] A random colour was generated: BLUE and the RGBA values were (0, 0, 255, 255)
-03/14/2023 04:36:39 PM [__main__] [INFO] [Lvl:20] [colour] [141] A random colour was generated: BLUE and the RGBA values were (0, 0, 255, 255)
-03/14/2023 04:36:40 PM [__main__] [INFO] [Lvl:20] [colour] [141] A random colour was generated: ORANGE and the RGBA values were (255, 165, 0, 255)
-03/14/2023 04:36:41 PM [__main__] [INFO] [Lvl:20] [colour] [141] A random colour was generated: GREEN and the RGBA values were (0, 128, 0, 255)
-03/14/2023 04:36:42 PM [__main__] [INFO] [Lvl:20] [colour] [141] A random colour was generated: PINK and the RGBA values were (255, 192, 203, 255)
-03/14/2023 04:38:43 PM [__main__] [INFO] [Lvl:20] [colour] [141] A random colour was generated: BLUE and the RGBA values were (0, 0, 255, 255)
+03/15/2023 04:05:27 PM [__main__] [ERROR] [Lvl:40] [colour] [168] An exception has occured: NoneType: None
+
+03/15/2023 04:05:38 PM [__main__] [INFO] [Lvl:20] [colour] [131] User has entered invalid characters: NoneType: None
+
