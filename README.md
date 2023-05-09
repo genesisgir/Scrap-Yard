@@ -1,6 +1,6 @@
 # The Scrap Yard Sketches
 
-![hoodie-industrial-area-anime-girl-long-hair-junkyard](https://user-images.githubusercontent.com/87259615/201058623-7a353cfe-15a5-40c0-81cf-62a7437be50f.jpg)
+![environmentA05](https://user-images.githubusercontent.com/87259615/236672979-db63b371-e463-4d0e-9669-a7c2d20cc969.jpg)
 
 Sketches, Practice, Training. Whatever you may call it code that is never intended to be used in a program and are called sketches (At least that's what I call them.)
 every piece of code that I practiced on or worked on to figure something out eventually ended up in the Scrap Yard Sketches repository to be collected and scraped away
