@@ -19,74 +19,71 @@
                                     ⡇⠀⠀⢹⣿⡧⠀⡀⠀⣀⠀⠹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠋⢰⣿⠀⠀⠀⠀
                                     ⡇⠀⠀⠀⢻⢰⣿⣶⣿⡿⠿⢂⣿⣿⣿⣿⣿⣿⣿⢿⣻⣿⣿⣿⡏⠀⠀⠁⠀⠀⠀⠀
                                     ⣷⠀⠀⠀⠀⠈⠿⠟⣁⣴⣾⣿⣿⠿⠿⣛⣋⣥⣶⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀ ⣿⡀
-                                    
-a little sketch I labbed up on regexes , learning how to identify patterns within python and use them to find custom patterns within code,
-very helpful when creating patterns for emails, phone numbers, security pins etc.
+
+                                    丂ㄖㄩ尺⼕🝗 ⼕ㄖᗪ🝗 ⻏丫 Ꮆ🝗𝓝🝗丂讠丂Ꮆ讠尺
+                                
+It's May and I am recapping on regexes to further expand my knowledge on them, need a refresher tbh. fuck! 
+
+Need to rework this
 
 
 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 
 """
 
-# exception handling
-# import module
-import re, sys
+# import
+import re, time
 
-# sec pin const
-PIN = '6969'
+# regex patterns
+mobile_regex = re.compile(r'^(\d{3})-(\d{3}-\d{4})$')
+ssn_regex = re.compile(r'^(\d{3})-(\d{3})-(\d{4})$')
 
-# regexes
-security_pin_pattern = re.compile(r'^(\d{4})+$')
+# personal data array
+personal_data_array_type = ['mobile number', 'social security number']
 
-# methods
-def security_code_protocol():
-    """
-    A protocol that prompts user to enter the correct security code pin
-    """
-
-    # global
-    global r
-    global pin_match_obj
-
-    # security pin prompt
-    while True:
+# define methods
+def regularexpressionfunc(regex=None, type=None, prompt=None):
     
-        # userinput
-        r = input('enter the security pin for the terminal >')    
-        # search match objects for pattrens
-        pin_match_obj = security_pin_pattern.match(r)
+    # user input
+    resp = input('Enter a valid %s>' %(prompt))
+    #resp = input('Enter a valid fuck>')
+    print()
     
-        # flow condtionals
-        if r == PIN: # user input correct pin value logging in!   
-            print('Access Granted!')
-            break
-            
-        
-        elif r != PIN:
-            # incorrect values
-            print(f'the pin {r} was incorrect \n') # TODO attribute NoneType
-            continue
-            
-        
-        else: # incorrect pin value
-            continue
-            
+    # search match object string for regex patterns
+    mo = regex.search(resp)
+    
+    # display infromation
+    return print('The %s that was found was: %s' %(type ,mo.group()))
 
-# exception handling
-try: # check code
+def cycleshit():
+    
+    # iterate 
+    for regex in personal_data_array_type:
+        
+        # regex type
+        regex
+        
+        # conditionals
+        if regex == mobile_regex:
+            
+            regularexpressionfunc(regex=mobile_regex, type=personal_data_array_type[0], prompt=personal_data_array_type[0])
+            time.sleep(1)
+        
+        elif regex == ssn_regex:
+            
+            regularexpressionfunc(regex=ssn_regex, type=personal_data_array_type[1], prompt=personal_data_array_type[1])
+            time.sleep(1)
+        
+        else:
+            pass
 
-    security_code_protocol()
+# prevent traceback
+try:
+    regularexpressionfunc()
+    cycleshit()
 
 except:
-    pass
+    # warn user
+    print('No regex number has been found')
 
 finally:
-
-    # flow
-    if r == PIN:
-    
-        # log the fucker in
-        print('logged in')
-        sys.exit() # close program
-
-    else: # re-initiate security protocol
-        security_code_protocol()
+    pass

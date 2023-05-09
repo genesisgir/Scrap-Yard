@@ -4,6 +4,8 @@
                         █▀█ █▀▀ █▀▀ █░█ █░░ ▄▀█ █▀█   █▀▀ ▀▄▀ █▀█ █▀█ █▀▀ █▀ █▀ █ █▀█ █▄░█ █▀
                         █▀▄ ██▄ █▄█ █▄█ █▄▄ █▀█ █▀▄   ██▄ █░█ █▀▀ █▀▄ ██▄ ▄█ ▄█ █ █▄█ █░▀█ ▄█
 
+                                                four digit pin regex
+                                    
                                     ⣿⣿⣿⣿⣿⣿⠟⠋⠁⣀⣤⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢿⣿⣿
                                     ⣿⣿⣿⣿⠋⠁⠀⠀⠺⠿⢿⣿⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⠻⣿
                                     ⣿⣿⡟⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣤⣤⣤⣤⠀⠀⠀⠀⠀⣤⣦⣄⠀⠀
@@ -19,74 +21,80 @@
                                     ⡇⠀⠀⢹⣿⡧⠀⡀⠀⣀⠀⠹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠋⢰⣿⠀⠀⠀⠀
                                     ⡇⠀⠀⠀⢻⢰⣿⣶⣿⡿⠿⢂⣿⣿⣿⣿⣿⣿⣿⢿⣻⣿⣿⣿⡏⠀⠀⠁⠀⠀⠀⠀
                                     ⣷⠀⠀⠀⠀⠈⠿⠟⣁⣴⣾⣿⣿⠿⠿⣛⣋⣥⣶⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀ ⣿⡀
-                                    
-a little sketch I labbed up on regexes , learning how to identify patterns within python and use them to find custom patterns within code,
-very helpful when creating patterns for emails, phone numbers, security pins etc.
 
+                                    丂ㄖㄩ尺⼕🝗 ⼕ㄖᗪ🝗 ⻏丫 Ꮆ🝗𝓝🝗丂讠丂Ꮆ讠尺
+                                
+experimental regex patterns
 
+Coded by: GenesisGir
 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 
 """
+# import modules
+import re as bloodyre
+import sys
 
-# exception handling
-# import module
-import re, sys
+# bloody regex patterns
+BLOOD_STAIN_DNA_REGEX = bloodyre.compile(r'^(\d{3})$')
 
-# sec pin const
-PIN = '6969'
-
-# regexes
-security_pin_pattern = re.compile(r'^(\d{4})+$')
-
-# methods
-def security_code_protocol():
-    """
-    A protocol that prompts user to enter the correct security code pin
-    """
-
-    # global
-    global r
-    global pin_match_obj
-
-    # security pin prompt
-    while True:
+# define methods
+def collect_data_xko(filepath: str, fuck: any = ''): 
     
-        # userinput
-        r = input('enter the security pin for the terminal >')    
-        # search match objects for pattrens
-        pin_match_obj = security_pin_pattern.match(r)
+    # reference var to global scope
+    global contents
     
-        # flow condtionals
-        if r == PIN: # user input correct pin value logging in!   
-            print('Access Granted!')
-            break
-            
+    # open text I/O wrapper file
+    with open(file=filepath, mode='r') as f:
         
-        elif r != PIN:
-            # incorrect values
-            print(f'the pin {r} was incorrect \n') # TODO attribute NoneType
-            continue
-            
+        # store data into var
+        contents = f.read()
         
-        else: # incorrect pin value
-            continue
-            
+        # notify user that file was stored
+        print('Contents stored and found within the following path:')
+        return print(filepath, '\n')
 
-# exception handling
-try: # check code
+def scan_matches():
+    '''
+    searches string for regular expressions and displays them to stdout ⚠!
+    '''
+    # module import   
+    import random
+    randomint = random.randint(400, 500)
 
-    security_code_protocol()
-
-except:
-    pass
-
-finally:
-
-    # flow
-    if r == PIN:
+    # search for match objects within the text file
+    match_obj = BLOOD_STAIN_DNA_REGEX.search(contents)
     
-        # log the fucker in
-        print('logged in')
-        sys.exit() # close program
-
-    else: # re-initiate security protocol
-        security_code_protocol()
+    # exception handling!
+    try: # check for exceptions
+        
+        # display matches
+        print('A DNA sample pattern was found within the text file'  %(match_obj.group()))
+    
+    except: # write code to fix errors within the main module
+        # warn user that matches were not found
+        print('Exception[%s] matches not found. \n' %(randomint))
+        
+    
+    finally: # output
+        
+        # created blood generator
+        def blood_generator():
+            
+            # refer to match objects
+            global mo
+            
+            # imports
+            import random
+        
+            new_match_obj = str(555)
+            
+            mo = BLOOD_STAIN_DNA_REGEX.search(new_match_obj)
+    
+        # generate new blood DNA pattern & display match
+        blood_generator()
+        print('A DNA sample pattern was found within the text file %s'  %(mo.group()))
+        
+        
+# function calls list
+collect_data_xko(r'Scrap-Yard\Lab-Sketches-May-2023\regexes\regexpatternscraps\data\blood.txt')
+scan_matches()
+sys.exit() # terminate software

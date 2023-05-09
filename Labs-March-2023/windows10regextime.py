@@ -19,74 +19,73 @@
                                     ⡇⠀⠀⢹⣿⡧⠀⡀⠀⣀⠀⠹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠋⢰⣿⠀⠀⠀⠀
                                     ⡇⠀⠀⠀⢻⢰⣿⣶⣿⡿⠿⢂⣿⣿⣿⣿⣿⣿⣿⢿⣻⣿⣿⣿⡏⠀⠀⠁⠀⠀⠀⠀
                                     ⣷⠀⠀⠀⠀⠈⠿⠟⣁⣴⣾⣿⣿⠿⠿⣛⣋⣥⣶⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀ ⣿⡀
-                                    
-a little sketch I labbed up on regexes , learning how to identify patterns within python and use them to find custom patterns within code,
-very helpful when creating patterns for emails, phone numbers, security pins etc.
+                                        
+                                    丂ㄖㄩ尺⼕🝗 ⼕ㄖᗪ🝗 ⻏丫 Ꮆ🝗𝓝🝗丂讠丂Ꮆ讠尺
 
+a regex on the windows 10 time system
 
 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 
 """
 
-# exception handling
-# import module
-import re, sys
+# import module 
+import re
 
-# sec pin const
-PIN = '6969'
+# consts
+CORRECT_TIME_FORMAT = '7:32:01 PM'
 
-# regexes
-security_pin_pattern = re.compile(r'^(\d{4})+$')
+""" # how to
+
+█▀▀ █▀█ █▀▄▀█ █▀█ █ █░░ █ █▄░█ █▀▀   █░█ █▀   █▀▀ █▀█ █▀▀ ▄▀█ ▀█▀ █ █▄░█ █▀▀   █▀█ ▄▀█ ▀█▀ ▀█▀ █▀▀ █▀█ █▄░█ █▀
+█▄▄ █▄█ █░▀░█ █▀▀ █ █▄▄ █ █░▀█ █▄█   ▀▄▀ ▄█   █▄▄ █▀▄ ██▄ █▀█ ░█░ █ █░▀█ █▄█   █▀▀ █▀█ ░█░ ░█░ ██▄ █▀▄ █░▀█ ▄█
+
+█▀ █▀▀ █▀█ █░█ █▀▀ █▄░█ █▀▀ █▀▀ █▀
+▄█ ██▄ ▀▀█ █▄█ ██▄ █░▀█ █▄▄ ██▄ ▄█
+
+There is a difference to compiling a pattern and creating a pattern when It comes to pattern sequences is that when you compile a pattern
+you are compiling that pattern into a 'pattern object' and when you create a pattern you are defining a pattern!
+"""
+
+# windows 10 regex pattern
+windows_10_pattern = r'^(\d{1,2}):(\d{1,2}):(\d{1,2})\s([AaPp][Mm]){1}$'
+
+# compile pattern into pattern object
+WINDOWS_10_TIME_REGEX = re.compile(windows_10_pattern)
+
+# search for matches
+mo = WINDOWS_10_TIME_REGEX.search(CORRECT_TIME_FORMAT)
+
+# display the class 
+print(type(mo))
+print(type(mo.group(0)))
 
 # methods
-def security_code_protocol():
-    """
-    A protocol that prompts user to enter the correct security code pin
-    """
-
+def findmatch():
+    
     # global
-    global r
-    global pin_match_obj
-
-    # security pin prompt
+    global mo
+    
+    # warn user
+    print('No matches found!')
+    
+    # TODO if the matches are found than say matches found 
+    # meet condition to find matches
     while True:
-    
-        # userinput
-        r = input('enter the security pin for the terminal >')    
-        # search match objects for pattrens
-        pin_match_obj = security_pin_pattern.match(r)
-    
-        # flow condtionals
-        if r == PIN: # user input correct pin value logging in!   
-            print('Access Granted!')
-            break
-            
         
-        elif r != PIN:
-            # incorrect values
-            print(f'the pin {r} was incorrect \n') # TODO attribute NoneType
-            continue
-            
-        
-        else: # incorrect pin value
-            continue
-            
+        pass
 
-# exception handling
-try: # check code
+# check to see if the type of class is str w/isinstance() method
+var = isinstance(mo.group(1), str)
+print(var)
 
-    security_code_protocol()
+# match condtionals
+if var == True:
+    
+    # display matches
+    print('match found! \n')
+    print(mo)
+    
+elif mo == None:
+    findmatch() # meet the requirements
 
-except:
+else:
     pass
-
-finally:
-
-    # flow
-    if r == PIN:
-    
-        # log the fucker in
-        print('logged in')
-        sys.exit() # close program
-
-    else: # re-initiate security protocol
-        security_code_protocol()

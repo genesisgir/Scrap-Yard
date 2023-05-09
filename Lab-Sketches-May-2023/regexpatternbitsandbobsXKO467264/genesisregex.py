@@ -19,74 +19,20 @@
                                     ⡇⠀⠀⢹⣿⡧⠀⡀⠀⣀⠀⠹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠋⢰⣿⠀⠀⠀⠀
                                     ⡇⠀⠀⠀⢻⢰⣿⣶⣿⡿⠿⢂⣿⣿⣿⣿⣿⣿⣿⢿⣻⣿⣿⣿⡏⠀⠀⠁⠀⠀⠀⠀
                                     ⣷⠀⠀⠀⠀⠈⠿⠟⣁⣴⣾⣿⣿⠿⠿⣛⣋⣥⣶⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀ ⣿⡀
-                                    
-a little sketch I labbed up on regexes , learning how to identify patterns within python and use them to find custom patterns within code,
-very helpful when creating patterns for emails, phone numbers, security pins etc.
+
+                                    丂ㄖㄩ尺⼕🝗 ⼕ㄖᗪ🝗 ⻏丫 Ꮆ🝗𝓝🝗丂讠丂Ꮆ讠尺
+                                
+A regular expression that seraches for the name genesisgir and if that pattern is found display the name.
 
 
 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 
 """
-
-# exception handling
 # import module
-import re, sys
+#import re as whatever
+import re
 
-# sec pin const
-PIN = '6969'
+# create regular expression
+GENESIS_NAME_REGEX = re.compile(r'^(genesisgi)$') # 
 
-# regexes
-security_pin_pattern = re.compile(r'^(\d{4})+$')
-
-# methods
-def security_code_protocol():
-    """
-    A protocol that prompts user to enter the correct security code pin
-    """
-
-    # global
-    global r
-    global pin_match_obj
-
-    # security pin prompt
-    while True:
-    
-        # userinput
-        r = input('enter the security pin for the terminal >')    
-        # search match objects for pattrens
-        pin_match_obj = security_pin_pattern.match(r)
-    
-        # flow condtionals
-        if r == PIN: # user input correct pin value logging in!   
-            print('Access Granted!')
-            break
-            
-        
-        elif r != PIN:
-            # incorrect values
-            print(f'the pin {r} was incorrect \n') # TODO attribute NoneType
-            continue
-            
-        
-        else: # incorrect pin value
-            continue
-            
-
-# exception handling
-try: # check code
-
-    security_code_protocol()
-
-except:
-    pass
-
-finally:
-
-    # flow
-    if r == PIN:
-    
-        # log the fucker in
-        print('logged in')
-        sys.exit() # close program
-
-    else: # re-initiate security protocol
-        security_code_protocol()
+match_object = GENESIS_NAME_REGEX.search('genesisgir')
+print('The pattern was found: %s' %(match_object.group()))

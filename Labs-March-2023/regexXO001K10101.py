@@ -4,23 +4,24 @@
                         █▀█ █▀▀ █▀▀ █░█ █░░ ▄▀█ █▀█   █▀▀ ▀▄▀ █▀█ █▀█ █▀▀ █▀ █▀ █ █▀█ █▄░█ █▀
                         █▀▄ ██▄ █▄█ █▄█ █▄▄ █▀█ █▀▄   ██▄ █░█ █▀▀ █▀▄ ██▄ ▄█ ▄█ █ █▄█ █░▀█ ▄█
 
-                                  ⣿⣿⣿⣿⣿⣿⠟⠋⠁⣀⣤⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢿⣿⣿
-                                  ⣿⣿⣿⣿⠋⠁⠀⠀⠺⠿⢿⣿⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⠻⣿
-                                  ⣿⣿⡟⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣤⣤⣤⣤⠀⠀⠀⠀⠀⣤⣦⣄⠀⠀
-                                  ⣿⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣤⣶⣿⠏⣿⣿⣿⣿⣿⣁⠀⠀⠀⠛⠙⠛⠋⠀⠀
-                                  ⡿⠀⠀⠀⠀⠀⠀⠀⠀⡀⠀⣰⣿⣿⣿⣿⡄⠘⣿⣿⣿⣿⣷⠄⠀⠀⠀⠀⠀⠀⠀⠀
-                                  ⡇⠀⠀⠀⠀⠀⠀⠀⠸⠇⣼⣿⣿⣿⣿⣿⣷⣄⠘⢿⣿⣿⣿⣅⠀⠀⠀⠀⠀⠀⠀⠀
-                                  ⠁⠀⠀⠀⣴⣿⠀⣐⣣⣸⣿⣿⣿⣿⣿⠟⠛⠛⠀⠌⠻⣿⣿⣿⡄⠀⠀⠀⠀⠀⠀⠀
-                                  ⠀⠀⠀⣶⣮⣽⣰⣿⡿⢿⣿⣿⣿⣿⣿⡀⢿⣤⠄⢠⣄⢹⣿⣿⣿⡆⠀⠀⠀⠀⠀⠀
-                                  ⠀⠀⠀⣿⣿⣿⣿⣿⡘⣿⣿⣿⣿⣿⣿⠿⣶⣶⣾⣿⣿⡆⢻⣿⣿⠃⢠⠖⠛⣛⣷⠀
-                                  ⠀⠀⢸⣿⣿⣿⣿⣿⣿⣾⣿⣿⣿⣿⣿⣿⣮⣝⡻⠿⠿⢃⣄⣭⡟⢀⡎⣰⡶⣪⣿⠀
-                                  ⠀⠀⠘⣿⣿⣿⠟⣛⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣿⣿⣿⡿⢁⣾⣿⢿⣿⣿⠏⠀
-                                  ⠀⠀⠀⣻⣿⡟⠘⠿⠿⠎⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣵⣿⣿⠧⣷⠟⠁⠀⠀
-                                  ⡇⠀⠀⢹⣿⡧⠀⡀⠀⣀⠀⠹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠋⢰⣿⠀⠀⠀⠀
-                                  ⡇⠀⠀⠀⢻⢰⣿⣶⣿⡿⠿⢂⣿⣿⣿⣿⣿⣿⣿⢿⣻⣿⣿⣿⡏⠀⠀⠁⠀⠀⠀⠀
-                                  ⣷⠀⠀⠀⠀⠈⠿⠟⣁⣴⣾⣿⣿⠿⠿⣛⣋⣥⣶⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀ ⣿⡀
+                                    ⣿⣿⣿⣿⣿⣿⠟⠋⠁⣀⣤⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢿⣿⣿
+                                    ⣿⣿⣿⣿⠋⠁⠀⠀⠺⠿⢿⣿⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⠻⣿
+                                    ⣿⣿⡟⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣤⣤⣤⣤⠀⠀⠀⠀⠀⣤⣦⣄⠀⠀
+                                    ⣿⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣤⣶⣿⠏⣿⣿⣿⣿⣿⣁⠀⠀⠀⠛⠙⠛⠋⠀⠀
+                                    ⡿⠀⠀⠀⠀⠀⠀⠀⠀⡀⠀⣰⣿⣿⣿⣿⡄⠘⣿⣿⣿⣿⣷⠄⠀⠀⠀⠀⠀⠀⠀⠀
+                                    ⡇⠀⠀⠀⠀⠀⠀⠀⠸⠇⣼⣿⣿⣿⣿⣿⣷⣄⠘⢿⣿⣿⣿⣅⠀⠀⠀⠀⠀⠀⠀⠀
+                                    ⠁⠀⠀⠀⣴⣿⠀⣐⣣⣸⣿⣿⣿⣿⣿⠟⠛⠛⠀⠌⠻⣿⣿⣿⡄⠀⠀⠀⠀⠀⠀⠀
+                                    ⠀⠀⠀⣶⣮⣽⣰⣿⡿⢿⣿⣿⣿⣿⣿⡀⢿⣤⠄⢠⣄⢹⣿⣿⣿⡆⠀⠀⠀⠀⠀⠀
+                                    ⠀⠀⠀⣿⣿⣿⣿⣿⡘⣿⣿⣿⣿⣿⣿⠿⣶⣶⣾⣿⣿⡆⢻⣿⣿⠃⢠⠖⠛⣛⣷⠀
+                                    ⠀⠀⢸⣿⣿⣿⣿⣿⣿⣾⣿⣿⣿⣿⣿⣿⣮⣝⡻⠿⠿⢃⣄⣭⡟⢀⡎⣰⡶⣪⣿⠀
+                                    ⠀⠀⠘⣿⣿⣿⠟⣛⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣿⣿⣿⡿⢁⣾⣿⢿⣿⣿⠏⠀
+                                    ⠀⠀⠀⣻⣿⡟⠘⠿⠿⠎⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣵⣿⣿⠧⣷⠟⠁⠀⠀
+                                    ⡇⠀⠀⢹⣿⡧⠀⡀⠀⣀⠀⠹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠋⢰⣿⠀⠀⠀⠀
+                                    ⡇⠀⠀⠀⢻⢰⣿⣶⣿⡿⠿⢂⣿⣿⣿⣿⣿⣿⣿⢿⣻⣿⣿⣿⡏⠀⠀⠁⠀⠀⠀⠀
+                                    ⣷⠀⠀⠀⠀⠈⠿⠟⣁⣴⣾⣿⣿⠿⠿⣛⣋⣥⣶⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀ ⣿⡀
+                                        
                                     丂ㄖㄩ尺⼕🝗 ⼕ㄖᗪ🝗 ⻏丫 Ꮆ🝗𝓝🝗丂讠丂Ꮆ讠尺
-                                  
+
 further in depth studies on regexes
 
 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 🅶🅴🅽🅴🆂🅸🆂 
@@ -31,49 +32,49 @@ import re, random, sys
 
 # search method
 def searchforpattern():
-  """ # searchforpattern()
-  searchforpattern()
-  
-  """
-  # regex globals
-  global greedy_regex
-  global non_greedy_regex
-  global matches
-  global genesis_case_insensitive_regex_
-  global subsitute_regex_
-  global verbose_thicc_waifu_thot_regex
-  global time_regex
-  global date_regex
-  
-  # regex array
-  regex = [greedy_regex, non_greedy_regex, genesis_case_insensitive_regex_, subsitute_regex_, time_regex, date_regex]
-  
-  # storing pattren objects into matches
-  matches = re.compile(date_regex) # regex algorithm to use
-  
-  # values are in str 
-  data = '3/11/2023'
+    """ # searchforpattern()
+    searchforpattern()
+    
+    """
+    # regex globals
+    global greedy_regex
+    global non_greedy_regex
+    global matches
+    global genesis_case_insensitive_regex_
+    global subsitute_regex_
+    global verbose_thicc_waifu_thot_regex
+    global time_regex
+    global date_regex
+    
+    # regex array
+    regex = [greedy_regex, non_greedy_regex, genesis_case_insensitive_regex_, subsitute_regex_, time_regex, date_regex]
+    
+    # storing pattren objects into matches
+    matches = re.compile(date_regex) # regex algorithm to use
+    
+    # values are in str 
+    data = '3/11/2023'
 
-  # display regex results
-  #print(matches.match(data))
-  #print(matches.search(data))
-  #print(matches.findall(data))
-  
-  # case insensitive matching
-  #print('case insensitive matching:')
-  #print(matches.search(data))
-  
-  # subsitute matching
-  #name_generator = ['waifu ','destroyer of worlds ', 'facefucker ']
-  #
-  #print('subsitute regex matching:')
-  #print(matches.search(data))
-  
-  # mitigate verbose regexes w/re.VERBOSE method
-  #print(matches.match(data))
-  
-  # combining multiple re methods
-  return print(date_regex.match(data))
+    # display regex results
+    #print(matches.match(data))
+    #print(matches.search(data))
+    #print(matches.findall(data))
+    
+    # case insensitive matching
+    #print('case insensitive matching:')
+    #print(matches.search(data))
+    
+    # subsitute matching
+    #name_generator = ['waifu ','destroyer of worlds ', 'facefucker ']
+    #
+    #print('subsitute regex matching:')
+    #print(matches.search(data))
+    
+    # mitigate verbose regexes w/re.VERBOSE method
+    #print(matches.match(data))
+    
+    # combining multiple re methods
+    return print(date_regex.match(data))
 
 
 """ <- regex symbol guide
@@ -132,7 +133,7 @@ name_regex = re.compile(r'^\w(0, 12)+$')
 mobile_pin_regex = re.compile(r'^(\d{4})$')
 password_regex = re.compile(r'^([a-zA-Z0-9\-_])+$')
 full_name_regex = re.compile(r'^([a-zA-Z]+)(\s),*([a-zA-Z]*)?(\s)*([a-zA-Z]+)?$')
-time_regex = re.compile(r'^(\d{1,2}):(\d{1,2})(\s)?[AaPm][Mm]$')
+time_regex = re.compile(r'^(\d{1,2}):(\d{1,2})(\s)?[AaPp][Mm]$')
 date_regex = re.compile(r'^(\d{1,2})[\-\.\/]{1}(\d{1,2})[\-\.\/]{1}(\d{4})$')
 
 #verbose_thicc_waifu_thot_regex = re.compile(r'''(^
