@@ -62,10 +62,10 @@ def openfile() -> Type[None]:
     global sentencedata
     
     # file path to text file
-    file_path = r'C:\Users\daint\Documents\GitHub\Scrap-Yard\Lab-Sketches-May-2023\NaturalLanguageToolKitLabs\data\data.txt'
+    FILE_PATH = r'C:\Users\daint\Documents\GitHub\Scrap-Yard\Lab-Sketches-May-2023\NaturalLanguageToolKitLabs\data\data.txt'
 
     # open file containing data
-    with open(file=file_path, mode='r') as f:
+    with open(file=FILE_PATH, mode='r') as f:
         
         # store data within var
         sentencedata = f.read()
@@ -113,19 +113,18 @@ def otaku_ahrii_word_tokenizer(user_data: str = None) -> Type[str]:
     :･ﾟ✧:･.☽˚｡ ･ﾟ✧:･.: :･ﾟ✧:･.☽˚｡ ･ﾟ✧:･.: :･ﾟ✧:･.☽˚｡ ･ﾟ✧:･.: :･ﾟ✧:･.☽˚｡ ･ﾟ✧:･.: :･ﾟ✧:･.☽˚｡ ･ﾟ✧:･.: :･ﾟ✧:･.☽˚｡ ･ﾟ✧:･.: :･ﾟ✧:･.☽˚｡ ･ﾟ✧:･.:
     """
     
-    # import nltk
     import nltk
     
     # tokenize this thing
     SEXY_TOKENS = nltk.word_tokenize(sentencedata)
 
     # display sentence tokens
-    print('The data you have provided has been tokenized via using the nltk module, the data senetnces now have their own strings:')
+    print('The data you have provided has been tokenized via using the nltk module, the words found within the content are their own strings:')
     return print(SEXY_TOKENS, '\n')
 
 # tokenizes sentences
 def otaku_ahrii_sentence_tokenizer() -> Type[str]:
-    
+    # 
     """ < - otaku_ahrii_sentence_tokenizer() info click to open! 
 :･ﾟ✧:･.☽˚｡ ･ﾟ✧:･.: :･ﾟ✧:･.☽˚｡ ･ﾟ✧:･.: :･ﾟ✧:･.☽˚｡ ･ﾟ✧:･.: :･ﾟ✧:･.☽˚｡ ･ﾟ✧:･.: :･ﾟ✧:･.☽˚｡ ･ﾟ✧:･.: :･ﾟ✧:･.☽˚｡ ･ﾟ✧:･.: :･ﾟ✧:･.☽˚｡ ･ﾟ✧:･.:
     
@@ -159,31 +158,33 @@ def otaku_ahrii_sentence_tokenizer() -> Type[str]:
 
     :･ﾟ✧:･.☽˚｡ ･ﾟ✧:･.: :･ﾟ✧:･.☽˚｡ ･ﾟ✧:･.: :･ﾟ✧:･.☽˚｡ ･ﾟ✧:･.: :･ﾟ✧:･.☽˚｡ ･ﾟ✧:･.: :･ﾟ✧:･.☽˚｡ ･ﾟ✧:･.: :･ﾟ✧:･.☽˚｡ ･ﾟ✧:･.: :･ﾟ✧:･.☽˚｡ ･ﾟ✧:･.:
     """
-    # import module
+    
     import nltk
     
     # tokenizing stage
     SEXY_TOKENS = nltk.sent_tokenize(sentencedata)
     
     # display sentence tokens stage (optional)
-    print('The data you have provided has been tokenized via using the nltk module, the data senetnces now have their own strings:')
+    print('The data you have provided has been tokenized via using the nltk module, the data sentences now have their own strings:')
     print('%s sentences found within the text file!' %(len(SEXY_TOKENS)))
-    print('tokens found:')
+    
     
     # define func()
-    def iter():
+    def iter(): 
+        print('tokens found:')
         
         # iterate through tokens
         for token in SEXY_TOKENS:
             
-            print(SEXY_TOKENS[token]) # display token found 
+            print(SEXY_TOKENS[token]) # display token found
+            continue # re-iter
     
     # call func()
-    return iter()
+    return iter() 
 
 # TODO add different artsyle to it
 # tokenizes whitespace
-def otaku_ahrii_whitepace_tokenizer() -> Type[str]:
+def otaku_ahrii_whitepace_tokenizer() -> Type[str]: 
     
     """ < - otaku_ahrii_whitespace_tokenizer() info click to open! 
 :･ﾟ✧:･.☽˚｡ ･ﾟ✧:･.: :･ﾟ✧:･.☽˚｡ ･ﾟ✧:･.: :･ﾟ✧:･.☽˚｡ ･ﾟ✧:･.: :･ﾟ✧:･.☽˚｡ ･ﾟ✧:･.: :･ﾟ✧:･.☽˚｡ ･ﾟ✧:･.: :･ﾟ✧:･.☽˚｡ ･ﾟ✧:･.: :･ﾟ✧:･.☽˚｡ ･ﾟ✧:･.:
@@ -212,20 +213,19 @@ def otaku_ahrii_whitepace_tokenizer() -> Type[str]:
     The otaku_ahrii_whitespace_tokenizer() is a function built to tokenize whitespaces into tokens found within the input given to the method
     whitespace_tokenize from the nltk module, this can be used to find whitespace and the final result is to create a list as the final output with
     all the tokens inside of that array. the difference between just tokenizing it normally is that with the 'nltk.whitespace_tokenize().tokenize()'
-    the method will toekenize words on spaces, tabs, newlines!
+    the method will tokenize words on spaces, tabs, newlines!
 
     :･ﾟ✧:･.☽˚｡ ･ﾟ✧:･.: :･ﾟ✧:･.☽˚｡ ･ﾟ✧:･.: :･ﾟ✧:･.☽˚｡ ･ﾟ✧:･.: :･ﾟ✧:･.☽˚｡ ･ﾟ✧:･.: :･ﾟ✧:･.☽˚｡ ･ﾟ✧:･.: :･ﾟ✧:･.☽˚｡ ･ﾟ✧:･.: :･ﾟ✧:･.☽˚｡ ･ﾟ✧:･.:
     """
-    # import module
+
     import nltk
     
     # tokenizing stage
     tokens = nltk.WhitespaceTokenizer().tokenize(sentencedata)
     
-    # display tokens
     # display sentence tokens stage (optional)
     print('The data you have provided has been tokenized via using the nltk module:')
-    print('%s whitespaces found within the text file!' %(len(tokens)))
+    print('%s words with whitespace found within the text file!' %(len(tokens)))
     return print('tokens found: %s' %(tokens)) # final return value of method/func()
 
 # tokenizes tweets
@@ -261,14 +261,11 @@ def otaku_ahrii_tweet_tokenizer() -> Type[str]:
     
     :･ﾟ✧:･.☽˚｡ ･ﾟ✧:･.: :･ﾟ✧:･.☽˚｡ ･ﾟ✧:･.: :･ﾟ✧:･.☽˚｡ ･ﾟ✧:･.: :･ﾟ✧:･.☽˚｡ ･ﾟ✧:･.: :･ﾟ✧:･.☽˚｡ ･ﾟ✧:･.: :･ﾟ✧:･.☽˚｡ ･ﾟ✧:･.: :･ﾟ✧:･.☽˚｡ ･ﾟ✧:･.:
     """
-    # import module
+    
     import nltk
     from nltk.tokenize import TweetTokenizer
     
-    # create tokenizer stage
-    twitter_tokenizer = TweetTokenizer()
-    
-    # create tokens
+    # cr3eate tokens
     tokens = nltk.TweetTokenizer(preserve_case=True, reduce_len=False, strip_handles=False, match_phone_numbers=True).tokenize(sentencedata)
     
     # display tokens
@@ -277,9 +274,9 @@ def otaku_ahrii_tweet_tokenizer() -> Type[str]:
     print('%s tweets found within the text file!' %(len(tokens)))
     return print('token tweets found: %s' %(tokens)) # final return value of method/func()
 
-def otaku_ahrii_lemmatizer() -> Type[str]:
+def otaku_ahrii_lemmatizer() -> Type[None]:
         
-    """ < - otaku_ahrii_whitespace_tokenizer() info click to open! 
+    """ < - otaku_ahrii_lemmatizer() info click to open! 
 :･ﾟ✧:･.☽˚｡ ･ﾟ✧:･.: :･ﾟ✧:･.☽˚｡ ･ﾟ✧:･.: :･ﾟ✧:･.☽˚｡ ･ﾟ✧:･.: :･ﾟ✧:･.☽˚｡ ･ﾟ✧:･.: :･ﾟ✧:･.☽˚｡ ･ﾟ✧:･.: :･ﾟ✧:･.☽˚｡ ･ﾟ✧:･.: :･ﾟ✧:･.☽˚｡ ･ﾟ✧:･.:
     
             █▀█ ▀█▀ ▄▀█ █▄▀ █░█ ▄▀█ █▀█ █░█ █ █   █░█░█ █▀█ █▀█ █▀▄   █░░ █▀▀ █▀▄▀█ █▀▄▀█ ▄▀█ ▀█▀ █ ▀█ █▀▀ █▀█
@@ -311,25 +308,26 @@ def otaku_ahrii_lemmatizer() -> Type[str]:
     :･ﾟ✧:･.☽˚｡ ･ﾟ✧:･.: :･ﾟ✧:･.☽˚｡ ･ﾟ✧:･.: :･ﾟ✧:･.☽˚｡ ･ﾟ✧:･.: :･ﾟ✧:･.☽˚｡ ･ﾟ✧:･.: :･ﾟ✧:･.☽˚｡ ･ﾟ✧:･.: :･ﾟ✧:･.☽˚｡ ･ﾟ✧:･.: :･ﾟ✧:･.☽˚｡ ･ﾟ✧:･.:
     """ 
     
-    # import module
+    
     import nltk, sys
     from nltk.stem.wordnet import WordNetLemmatizer
     global response
 
     # create lemmatizer
-    lemmatzier = WordNetLemmatizer()
+    lemmatizer = WordNetLemmatizer()
     
     # user input conditions
     while True:
+        
         def lemmatize():
             
             # lemmatize users word
             response =  input('Select a word you would like to return the lemma for of >')
             print()
-            lemma =  lemmatzier.lemmatize(word=response)
+            lemma =  lemmatizer.lemmatize(word=response)
 
             # flow
-            if response.isalpha(): # return lemma if input is str
+            if response.isalpha(): # return lemma if input has letters
             
                 # display lemmatized input
                 print('The lemma of the word %s is %s! \n' %(response, lemma))
@@ -356,7 +354,7 @@ def otaku_ahrii_lemmatizer() -> Type[str]:
     # return value of method
     return None
 
-# TODO experiement with regex tokenizers more
+# TODO experiment with regex tokenizers more
 def otaku_ahrii_regex_tokenizer() -> Type[str]:
     
     """ < - otaku_ahrii_whitespace_tokenizer() info click to open! 
@@ -388,8 +386,7 @@ def otaku_ahrii_regex_tokenizer() -> Type[str]:
     
     :･ﾟ✧:･.☽˚｡ ･ﾟ✧:･.: :･ﾟ✧:･.☽˚｡ ･ﾟ✧:･.: :･ﾟ✧:･.☽˚｡ ･ﾟ✧:･.: :･ﾟ✧:･.☽˚｡ ･ﾟ✧:･.: :･ﾟ✧:･.☽˚｡ ･ﾟ✧:･.: :･ﾟ✧:･.☽˚｡ ･ﾟ✧:･.: :･ﾟ✧:･.☽˚｡ ･ﾟ✧:･.:
     """ 
-    
-    # import nltk
+
     import nltk
     from nltk.tokenize import RegexpTokenizer
     
