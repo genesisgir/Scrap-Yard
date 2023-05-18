@@ -78,7 +78,7 @@ exception_message = traceback.format_exc()
 def colour():
     """ # color()
     Returns the RBGA values of a color user has set or a random one from a list data type.
-    """
+    """ 
     
     # colors list
     colors = ['RED', 'GREEN', 'BLUE', 'PINK', 'YELLOW', 'ORANGE', 'WHITE', 'BLACK']

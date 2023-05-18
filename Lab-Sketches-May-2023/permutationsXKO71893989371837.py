@@ -38,9 +38,8 @@
                                         ⠀⠀⠀⠀⠀⠀⠀⠀⢈⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
                                         ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 
-
 𝓰ⲉⲛⲉ𝛓ⲓ𝛓 𝛓ⲩⲛⲟⲣ𝛓ⲓ𝛓
-permutation is the arrangement of a sequences members and is the re-arrangement of how the elements, values, members are ordered and all variations/permutations 
+permutation is the arrangement of a sequences of members and is the re-arrangement of how the elements, values, members are ordered and all variations/permutations 
 of that seqeunce are returned. This is very an important practice to learn within programming and permutation is a must know skillset every programmer should have
 you ill have the ability of returning and obtaining all variations of a sequence and to view them. permutation is also in mathematics as well and goes
 to show the importance of this method, In theory you could make a simple code-lock unlocker that uses permutation to find all the possible variations 
