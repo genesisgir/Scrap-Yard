@@ -69,7 +69,7 @@ def waifufacedetect(filename = anime_cascade_file, image_color: int = 0, image_n
                                         thickness = 2,
                                         )
     
-    imagepath = r'Scrap-Yard\Lab-Sketches-Feburary-2023\cv2sketch\waifufacedetect\imagesources\cow_waifu_suggestive.png'
+    imagepath = r'Scrap-Yard\Lab-Sketches-Feburary-2023\cv2sketch\waifufacedetect\image_dataset\cow_waifu_suggestive.png'
     
     # setting the detection model classifier
     model = cv2.CascadeClassifier(filename)
