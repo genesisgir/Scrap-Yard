@@ -25,14 +25,12 @@
 Exponentiation is a mathematical operation that involves raising a number to a certain power. In exponentiation, the base number is multiplied by 
 itself a specified number of times, which is determined by the exponent.
 
-
-here 
 """
 
 # Exponentiation 
 2^3 = 2 * 2 * 2 = 8
 
-#===============#
+#======= expressions ========#
 2^2 2 * 2 = 4 
 2^3 2 * 4 = 8
 2^4 2 * 8 = 16
@@ -123,61 +121,3 @@ here
 -------
 262,144
 ------------
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
