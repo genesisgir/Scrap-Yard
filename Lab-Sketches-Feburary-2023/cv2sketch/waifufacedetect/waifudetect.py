@@ -163,6 +163,6 @@ def face_video_detect():
     cv2.destroyAllWindows()
 
 # calls
-waifufacedetect(image_color=0) # display waifu greyscaled
-waifufacedetect(image_color=1) # display waifu colored
-#face_video_detect()
+#waifufacedetect(image_color=0) # display waifu greyscaled
+#waifufacedetect(image_color=1) # display waifu colored
+face_video_detect()

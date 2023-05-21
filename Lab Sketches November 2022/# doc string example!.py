@@ -32,7 +32,7 @@ def init():
 
 def help_me():
     # doc str 
-    """ help() on documentaion on functions"""
+    """ help() on documentation on functions"""
     
     # globals
     global x
