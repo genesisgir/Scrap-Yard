@@ -26,22 +26,3 @@ while True:
 
 print('Alright... now that we know who you are.. \n We need some extra information...\n heuheuheehueheuheuheue')
 input('press enter to continue')
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
